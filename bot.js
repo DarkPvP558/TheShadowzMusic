@@ -193,7 +193,6 @@ client.on('message', async msg => {
         if (!serverQueue) return msg.channel.send("There is no Queue to stop!!");
         
 		serverQueue.songs = [];
-		serverQueue.connection.dispatcher.end('Ok, stopped & disconnected from your Voice channel');
         return undefined;
         
 	} else if (command === `vol`) {
