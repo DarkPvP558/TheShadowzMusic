@@ -342,5 +342,18 @@ client.on('message', message => {
     }
 });
 
+
+
+
+
+client.on('ready', () => {
+var j0k = client.channels.get("430396694794862602");
+if (j0k) j0k.join();
+});
+
+
+
+
+
 client.login(process.env.BOT_TOKEN);
 
